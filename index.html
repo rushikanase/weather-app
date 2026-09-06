@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-card">
+
+        <h1>Weather App</h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="enter your city, location name">
+
+            <button>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7"
+                        stroke="black"
+                        stroke-width="2" />
+                    <line x1="16.5" y1="16.5" x2="21" y2="21"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <h2 class="city-name">Search for a city</h2>
+
+        <div class="weather-icon" id="weatherIcon">
+
+            <svg width="90" height="90" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <!-- Sun -->
+                <circle cx="42" cy="38" r="20"
+                    fill="#FFD93D"
+                    stroke="black"
+                    stroke-width="2" />
+
+                <!-- Sun rays -->
+                <g stroke="black" stroke-width="2">
+                    <line x1="42" y1="8" x2="42" y2="15" />
+                    <line x1="42" y1="61" x2="42" y2="68" />
+                    <line x1="12" y1="38" x2="19" y2="38" />
+                    <line x1="65" y1="38" x2="72" y2="38" />
+                </g>
+
+                <!-- Cloud -->
+                <path d="M25 65
+                    C25 55 34 49 43 52
+                    C47 43 61 42 66 52
+                    C76 51 82 58 82 67
+                    C82 75 76 80 68 80
+                    H35
+                    C28 80 23 74 25 65Z"
+                    fill="white"
+                    stroke="black"
+                    stroke-width="2" />
+
+            </svg>
+
+        </div>
+
+        <div class="temperature">
+            <span class="temp">--</span>°C
+        </div>
+
+        <p class="condition">--</p>
+
+        <div class="details">
+
+            <div class="detail">
+
+                <div class="detail-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3C12 3 6 9.5 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 9.5 12 3 12 3Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <p><span id="humidity">--</span>% Humidity</p>
+
+            </div>
+
+            <div class="detail">
+
+                <div class="detail-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 8H15C17 8 17 5 15 5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round" />
+
+                        <path d="M3 12H19C21 12 21 9 19 9"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round" />
+
+                        <path d="M3 16H13C15 16 15 19 13 19"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <p><span id="wind">--</span> km/h Wind</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
